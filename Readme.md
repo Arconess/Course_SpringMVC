@@ -11,3 +11,5 @@ Used technologies:
         - Spring Web Starter (Spring MVC + Tomcat)
         - Thymeleaf
         - Spring Boot DevTools
+    -Bootstrap 4.6
+

@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>Main Page</title>
+</head>
+<body>
+<!-- 	<h1 th:text="${message}"></h1> -->
+<!-- 	<h2> Today is [[${date}]]</h2> -->
+	<h1>Welcome</h1>
+	<h2>Job offer</h2>
+	<h3 th:text="'Title: ' + ${name} "></h3>
+	<h3 th:text="'Publish date: ' + ${date} "></h3>
+	<h3 th:text="'Salary: ' + ${salary} "></h3>
+	<h3 th:text="'Until: ' + ${until} "></h3>
+</body>
+</html>

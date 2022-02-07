@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>Vacants List</title>
+</head>
+<link rel="stylesheet"
+	href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+	integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn"
+	crossorigin="anonymous">
+
+<body>
+
+	<h1 class="text-primary">Vacants List</h1>
+
+	<table class="table table-striped table-bordered table-hover">
+		<tr>
+			<th>Id</th>
+			<th>Name</th>
+			<th>Publication Date</th>
+			<th>Salary</th>
+			<th>Description</th>
+		</tr>
+		<tr th:each="tmpVac : ${vacants}">
+			<td th:text="${tmpVac.id}"></td>
+			<td th:text="${tmpVac.name}"></td>
+			<td th:text="${tmpVac.date}"></td>
+			<td th:text="${tmpVac.salary}"></td>
+			<td th:text="${tmpVac.description}"></td>
+		</tr>
+	</table>
+
+	<script
+		src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"
+		integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF"
+		crossorigin="anonymous"></script>
+</body>
+</html>
