@@ -9,6 +9,8 @@ public class Vacant {
 	private String description;
 	private Date date;
 	private Double salary;
+	private Integer highlated;
+	private String image = "no-image.png";
 	
 	public Integer getId() {
 		return id;
@@ -40,7 +42,18 @@ public class Vacant {
 	public void setSalary(Double salary) {
 		this.salary = salary;
 	}
-	
+	public Integer getHighlated() {
+		return highlated;
+	}
+	public void setHighlated(Integer highlated) {
+		this.highlated = highlated;
+	}
+	public String getImage() {
+		return image;
+	}
+	public void setImage(String image) {
+		this.image = image;
+	}
 	@Override
 	public String toString() {
 		return "Vacant [id=" + id + ", name=" + name + ", description=" + description + ", date=" + date + ", salary="

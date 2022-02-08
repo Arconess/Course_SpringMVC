@@ -19,7 +19,7 @@ public class HomeController {
 	public String showTable(Model model) {
 		
 		List<Vacant> list = getVacants();
-		model.addAttribute("vacants", list);
+		model.addAttribute("vacancies", list);
 		
 		return "table";
 		
@@ -88,6 +88,8 @@ public class HomeController {
 			vacant1.setDescription("Engineer required for intranet support.");
 			vacant1.setDate(sdf.parse("08-02-2019"));
 			vacant1.setSalary(2000.0);
+			vacant1.setHighlated(1);
+			vacant1.setImage("icon1.png");
 			
 			Vacant vacant2 = new Vacant();
 			vacant2.setId(2);
@@ -95,6 +97,8 @@ public class HomeController {
 			vacant2.setDescription("Electrical Engineer description");
 			vacant2.setDate(sdf.parse("10-10-2020"));
 			vacant2.setSalary(3000.0);
+			vacant2.setHighlated(0);
+			vacant2.setImage("icon2.png");
 			
 			Vacant vacant3 = new Vacant();
 			vacant3.setId(3);
@@ -102,6 +106,7 @@ public class HomeController {
 			vacant3.setDescription("Graphic Designer description");
 			vacant3.setDate(sdf.parse("24-05-2021"));
 			vacant3.setSalary(2100.0);
+			vacant3.setHighlated(0);
 			
 			Vacant vacant4 = new Vacant();
 			vacant4.setId(4);
@@ -109,6 +114,8 @@ public class HomeController {
 			vacant4.setDescription("Bookkeeper description");
 			vacant4.setDate(sdf.parse("17-02-2022"));
 			vacant4.setSalary(1500.0);
+			vacant4.setHighlated(1);
+			vacant4.setImage("icon4.png");
 			
 			list.add(vacant1);
 			list.add(vacant2);
